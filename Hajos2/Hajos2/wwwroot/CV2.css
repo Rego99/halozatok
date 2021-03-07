@@ -1,0 +1,142 @@
+﻿body
+
+#listak {
+    background-color: lightgrey;
+}
+
+.megisfeher {
+    background-color: white;
+    width: 100px;
+    border-radius: 25px;
+}
+
+.sorrendi {
+    font-style: italic;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: bold;
+    text-align: center;
+    div
+
+{
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid fuchsia;
+    border-radius: 25px;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+a {
+    padding: 10px;
+    border-radius: 25px;
+    background-color: blue;
+    color: white;
+}
+
+    a:hover {
+        background-color: fuchsia;
+    }
+
+span {
+    font-weight: bold;
+    font-style: italic;
+    color: fuchsia;
+    font-size: 40px;
+}
+
+#listak {
+    background-color: lightgrey;
+}
+
+.megisfeher {
+    background-color: white;
+    width: 100px;
+    border-radius: 25px;
+}
+
+.sorrendi {
+    font-style: italic;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+}
+
+#header {
+    background-color: tomato;
+    padding: 20px;
+}
+
+/* menü */
+#nav a {
+    /* ugyanaz, mint flex-grow:1; flex-shrink:1;flex-basis:auto;*/
+    flex: 1 1 auto;
+    text-decoration: none;
+    color: black;
+}
+
+#nav {
+    background: deepskyblue;
+    padding: 20px;
+}
+
+#article {
+    text-align: left;
+    background: gold;
+    padding: 20px;
+    display: flex;
+}
+
+#aside {
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+#footer {
+    background: hotpink;
+    padding: 20px;
+}
+
+/* 800px-nél nagyobb képernyő*/
+@media screen and (min-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        max-width: 1500px;
+        margin: auto;
+    }
+
+    #main {
+        display: flex;
+    }
+
+    #nav,
+    #header {
+        order: -1;
+    }
+
+    #article {
+        flex: 1 1 75%;
+    }
+
+    #aside {
+        flex: 1 1 25%;
+    }
+}
