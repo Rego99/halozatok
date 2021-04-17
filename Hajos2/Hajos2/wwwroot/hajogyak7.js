@@ -1,11 +1,11 @@
 window.onload = function () {
-    letöltés();
+    letoltes();
 }
 
-var kérdések;
-var kérdésszám;
+var kerdesek;
+var kerdeszam;
 
-function letöltés() {
+function letoltes() {
     fetch('/questions.json')
         .then(response => response.json())
         .then(data => letöltésBefejezõdött(data)
