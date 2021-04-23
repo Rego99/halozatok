@@ -126,6 +126,7 @@ function válaszfeldolgozás(válasz) {
     }
     else {
         return válasz.json()
+
     }
 }
 
