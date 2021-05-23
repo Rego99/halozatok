@@ -55,6 +55,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+
+
+
+
 function kerdesbe(questionNum, destination) {
     fetch('/questions/${questionNum}')
         .then(result => {

@@ -12,7 +12,7 @@ function letoltes() {
         )
 };
 
-function letöltésBefejezõdött(d) {
+function letoltésBefejez(d) {
     console.log("Sikeres letöltés")
     console.log(d)
     kérdések = d;
@@ -100,33 +100,10 @@ function kérdésMegjelenítés(kérdés)
     document.getElementById("kép").src = "https://szoft1.comeback.hu/hajo/" + kérdés.image;
 }
 
-function kérdésBetöltés(id)
-{
-    fetch(`/questions/${id}`)
-        .then(response => {
-            if (!response.ok) {
-                console.error(`Hibás válasz: ${response.status}`)
-            }
-            else {
-                return response.json()
-            }
-        })
-        .then(data => kérdésMegjelenítés(data));
-}    
+  
 
-//function kérdésBetöltés(id) {
-  //  fetch(`/questions/${id}`)
-    //    .then(válaszfeldolgozás)
-      //  .then(kérdésMegjelenítés);
-//}
 
-function válaszfeldolgozás(válasz) {
-    if (!válasz.ok) {
-        console.error(`Hibás válasz: ${response.status}`)
-    }
-    else {
-        return válasz.json()
 
-    }
-}
+
+
 
